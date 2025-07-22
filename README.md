@@ -1,7 +1,6 @@
 
 # 🎯 Term Deposit Subscription Prediction — Bank Marketing Campaign
 
-![bank-marketing](https://img.shields.io/badge/Project-Type%3A-Binary%20Classification-blue)
 Predict whether a customer will subscribe to a **term deposit** based on a direct marketing campaign using ML techniques and explainable AI.
 
 ---
@@ -9,7 +8,7 @@ Predict whether a customer will subscribe to a **term deposit** based on a direc
 ## 📁 Dataset
 
 * **Source**: [UCI Machine Learning Repository - Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
-* **Records**: 41,189
+* **Records**: 41,188
 * **Target Variable**: `y` (Yes/No — term deposit subscription)
 
 ---
