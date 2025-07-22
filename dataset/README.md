@@ -7,7 +7,7 @@ This folder contains the dataset used for the project **"Term Deposit Subscripti
 ## 📦 Dataset Source
 
 - **Origin**: [UCI Machine Learning Repository - Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
-- **File**: `bank-full.csv`
+- **File**: `bank-additional-full.csv`
 - **Instances**: 41,189
 - **Target Variable**: `y` (Binary — Yes/No)
 
