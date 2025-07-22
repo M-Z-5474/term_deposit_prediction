@@ -192,7 +192,7 @@ Here's **why**:
 
 **Muhammad Zain Mushtaq**
 AI/ML & Data Science Enthusiast | Researcher
-📬 [LinkedIn](https://www.linkedin.com/in/muhammad-zain-m-a75163358/) | 📧 [mzainmushtaq@gmail.com](mailto:mzainmushtaq@gmail.com)
+📬 [LinkedIn](https://www.linkedin.com/in/muhammad-zain-m-a75163358/) | 📧 [m.zainmushtaq74@gmail.com](mailto:m.zainmushtaq74@gmail.com)
 
 ---
 
