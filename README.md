@@ -94,6 +94,48 @@ Used SHAP (SHapley Additive exPlanations) to:
 
 ---
 
+## 📊 Final Comparison Table: Random Forest vs XGBoost (Before & After SMOTE)
+
+| Metric                  | RF Before SMOTE | RF After SMOTE | XGB Before SMOTE | XGB After SMOTE |
+| ----------------------- | --------------- | -------------- | ---------------- | --------------- |
+| **Accuracy**            | ✅ 0.8978        | 🔻 0.8881      | ✅ 0.8997         | ✅ 0.8999        |
+| **AUC Score**           | ✅ 0.79          | 🔻 0.78        | ✅ 0.80           | 🔺 **0.8035**   |
+| **Recall (Class 1)**    | 0.31            | 🔺 **0.37**    | 0.29             | 🔺 0.34         |
+| **Precision (Class 1)** | ✅ 0.59          | 🔻 0.50        | ✅ 0.62           | 🔻 0.60         |
+| **F1-Score (Class 1)**  | 0.40            | 🔺 **0.43**    | 0.39             | 🔺 **0.43**     |
+| **FN (Conf. Matrix)**   | 573             | 617            | 662              | 🔺 **617**      |
+| **Support (Class 1)**   | 928             | 928            | 928              | 928             |
+
+---
+
+## 🧠 Analysis: Which is Better & Why?
+
+### ✅ **XGBoost After SMOTE is the Best Choice**
+
+Here's **why**:
+
+| Criteria                     | Explanation                                                                |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| 📈 **Balanced F1-Score**     | XGBoost After SMOTE achieves **0.43**, equal to RF After SMOTE — but...    |
+| 📊 **Better AUC Score**      | XGBoost has **0.8035 AUC**, higher than RF’s 0.78 — meaning better ranking |
+| 🎯 **Improved Recall**       | Recall improves from 0.29 → 0.34 (helps detect more positive cases)        |
+| 🧪 **Stable Accuracy**       | Accuracy remains **almost unchanged** after SMOTE (0.8997 → 0.8999)        |
+| 🤖 **More Robust to SMOTE**  | Unlike RF, XGBoost did **not lose much precision or accuracy**             |
+| 🔍 **Fewer False Negatives** | FN dropped from 662 → 617 in XGBoost, matching RF but with better AUC      |
+
+---
+
+## 🧾 Justification Text:
+
+> After applying SMOTE to handle class imbalance, we evaluated Random Forest and XGBoost using multiple metrics — accuracy, AUC, precision, recall, F1-score, and confusion matrix.
+>
+> While both models showed improvement in detecting the minority class, **XGBoost After SMOTE emerged as the most balanced and robust model**. It achieved the **highest AUC (0.8035)**, stable accuracy (0.8999), and **better recall and F1-score** without significantly compromising precision.
+>
+> Therefore, **XGBoost with SMOTE was chosen** as the final model due to its superior balance between overall performance and minority class detection, which is crucial for tasks like mental health prediction where false negatives are costly.
+
+---
+
+
 ## 🏁 Final Verdict
 
 > ✅ **Random Forest** is the **best overall model** based on:
