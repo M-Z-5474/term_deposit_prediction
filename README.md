@@ -159,15 +159,22 @@ Here's **why**:
 ## 📎 Repository Structure
 
 ```
-📁 Term-Deposit-Prediction/
+📦 Term-Deposit-Prediction/
 │
-└── 📁 notebook/   
-     ├── 📄 term_deposit_prediction.ipynb     # Complete notebook with all steps
-     └── 📄README.md                          # notebook readme file
+├── 📁 notebook/   
+│   ├── 📄 term_deposit_prediction.ipynb       # Complete notebook with all steps
+│   └── 📄 README.md                            # Notebook-specific readme
+│
 ├── 📁 dataset/                         
-     ├── 📄 bank-additional-full.csv             # Dataset file
-     └── 📄 README.md                          # Dataset README file
-└──  📄 README.md                         # This file
+│   ├── 📄 bank-additional-full.csv            # Dataset file
+│   └── 📄 README.md                            # Dataset description
+│
+├── 📄 encoder.pkl                              # Encoder used for categorical feature transformation
+├── 📄 scaler.pkl                               # Scaler used for feature normalization
+├── 📄 xgb_term_deposit_model.pkl              # Trained XGBoost model for prediction
+│
+└── 📄 README.md                                # Main project readme (this file)
+
 
 ```
 
