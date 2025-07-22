@@ -40,7 +40,7 @@ This folder contains the complete analysis, modeling, and explainability noteboo
 
 ## 📌 How to Run
 
-1. Make sure the `bank-full.csv` file exists in the `../dataset/` directory.
+1. Make sure the `bank-additional-full.csv` file exists in the `../dataset/` directory.
 2. Open the notebook in Jupyter or Colab.
 3. Run each cell in sequence to reproduce the analysis and model results.
 
